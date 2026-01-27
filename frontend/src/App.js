@@ -5,6 +5,11 @@ import HomePage from "./pages/homepage";
 import AboutPage from "./pages/aboutpage";
 import ContactUs from "./pages/contactus";
 
+/**
+ * Application root component that configures client-side routes and renders the corresponding page components.
+ *
+ * @returns {JSX.Element} A React element containing the Router with the app's route configuration.
+ */
 function App() {
   return (
     <Router>

@@ -41,18 +41,20 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-       <button
-  className="md:hidden bg-orange-500 px-4 py-2 rounded-full text-xl"
-  onClick={() => setOpen(!open)}
->
-  {open ? "✕" : "☰"}
-</button>
+        <button type="button"
+          className="md:hidden bg-orange-500 px-4 py-2 rounded-full text-xl"
+          onClick={() => setOpen(!open)} aria-expanded={open}
+          aria-controls="mobile-nav"
+          aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+        >
+          {open ? "✕" : "☰"}
+        </button>
 
       </div>
 
       {/* Mobile Dropdown Menu */}
       {open && (
-        <div className="md:hidden absolute right-6 top-full mt-4 w-56 bg-[#0F2A44] rounded-xl shadow-lg p-4 text-sm z-50">
+        <div id="mobile-nav" className="md:hidden absolute right-6 top-full mt-4 w-56 bg-[#0F2A44] rounded-xl shadow-lg p-4 text-sm z-50">
 
           <NavLink to="/home" onClick={() => setOpen(false)} className="block py-2 px-2 hover:text-orange-400">
             Home

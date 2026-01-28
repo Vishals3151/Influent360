@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import CTA from "../components/CTA";
 
 const AboutPage = () => {
     return (
@@ -217,26 +218,7 @@ const AboutPage = () => {
             </section>
 
             {/* ================= CTA ================= */}
-            <section className="px-10 py-20">
-                <div className="bg-orange-500 rounded-2xl text-center p-12">
-                    <h2 className="text-3xl font-bold text-black">
-                        Ready to elevate your digital presence?
-                    </h2>
-                    <p className="text-black/80 mt-3">
-                        Join the hundreds of brands and influencers growing together
-                        through Influent360.
-                    </p>
-
-                    <div className="flex justify-center gap-4 mt-6">
-                        <button className="bg-black text-white px-6 py-3 rounded-xl">
-                            Start a Campaign
-                        </button>
-                        <button className="bg-white text-black px-6 py-3 rounded-xl">
-                            Contact Us
-                        </button>
-                    </div>
-                </div>
-            </section>
+            <CTA/>
 
             {/* ================= FOOTER ================= */}
             <Footer />

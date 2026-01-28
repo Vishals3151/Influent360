@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import CTA from "../components/CTA";
 
 const HomePage = () => {
     return (
@@ -161,23 +162,8 @@ const HomePage = () => {
             </section>
 
             {/* ================= CTA ================= */}
-            <section className="px-10 py-20 bg-orange-500 text-center rounded-t-3xl">
-                <h2 className="text-3xl font-bold text-black">
-                    Ready to scale your brand?
-                </h2>
-                <p className="text-black/80 mt-2">
-                    Join hundreds of successful brands that trust Influent360.
-                </p>
+             <CTA/>
 
-                <div className="flex justify-center gap-4 mt-6">
-                    <button className="bg-black text-white px-6 py-3 rounded-xl">
-                        Get Free Audit
-                    </button>
-                    <button className="bg-white text-black px-6 py-3 rounded-xl">
-                        Contact Sales
-                    </button>
-                </div>
-            </section>
 
             {/* ================= FOOTER ================= */}
             <Footer />

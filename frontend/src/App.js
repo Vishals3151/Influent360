@@ -4,6 +4,8 @@ import SignupPage from "./pages/SignupPage";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactUs from "./pages/ContactUs";
+import FestivalCalendar from "./pages/FestivalCalendar";
+import Layout from "./components/Layout";
 
 /**
  * Application root component that configures client-side routes and renders the corresponding page components.
@@ -14,14 +16,18 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* Public routes without layout */}
         <Route path="/" element={<LoginPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactUs />} />
-
-
+        
+        {/* Protected routes with layout (Navbar) */}
+        <Route element={<Layout />}>
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/calendar" element={<FestivalCalendar />} />
+        </Route>
       </Routes>
     </Router>
   );

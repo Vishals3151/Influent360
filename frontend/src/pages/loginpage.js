@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
+
 const LoginPage = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-[#081a2b] to-[#020b16] text-white flex flex-col">
 
             {/* ================= NAVBAR ================= */}
-            <Navbar />
+          
 
             {/* Login Card */}
             <div className="flex flex-1 items-center justify-center">

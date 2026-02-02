@@ -6,7 +6,7 @@ const SignupPage = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-[#081a2b] to-[#020b16] text-white flex flex-col">
 
-            {/* Navbar */}
+           
             <nav className="flex justify-between items-center px-10 py-6">
                 <div className="flex items-center gap-2 text-xl font-bold">
                     <img

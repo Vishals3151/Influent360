@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
+
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 
@@ -9,7 +9,7 @@ const HomePage = () => {
         <div className="bg-[#081a2b] text-white">
 
             {/* ================= NAVBAR ================= */}
-            <Navbar />
+           
 
             {/* ================= HERO SECTION ================= */}
             <section className="relative min-h-[80vh] flex items-center justify-center text-center px-6 overflow-hidden">

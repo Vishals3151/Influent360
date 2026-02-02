@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 
@@ -8,7 +8,7 @@ const AboutPage = () => {
         <div className="bg-[#1a120b] text-white">
 
             {/* ================= NAVBAR ================= */}
-            <Navbar />
+      
 
             {/* ================= HERO / STORY ================= */}
 <section className="px-10 py-20 grid md:grid-cols-2 gap-10 items-center">

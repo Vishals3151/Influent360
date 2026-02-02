@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+
 import Footer from "../components/Footer";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
@@ -8,7 +8,7 @@ const ContactUs = () => {
     <div className="bg-[#1a120b] text-white min-h-screen">
 
       {/* ================= NAVBAR ================= */}
-      <Navbar />
+     
 
       {/* ================= HERO ================= */}
       <section className="max-w-7xl mx-auto px-10 py-20">

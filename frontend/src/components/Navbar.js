@@ -49,7 +49,6 @@ const Navbar = () => {
         >
           {open ? "✕" : "☰"}
         </button>
-
       </div>
 
       {/* Mobile Dropdown Menu */}

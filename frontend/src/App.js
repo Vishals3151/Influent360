@@ -4,6 +4,7 @@ import SignupPage from "./pages/signuppage";
 import HomePage from "./pages/homepage";
 import AboutPage from "./pages/aboutpage";
 import ContactUs from "./pages/contactus";
+import ServicesPage from "./pages/ServicesPage";
 
 /**
  * Application root component that configures client-side routes and renders the corresponding page components.
@@ -20,6 +21,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/services" element={<ServicesPage />} />
 
 
       </Routes>

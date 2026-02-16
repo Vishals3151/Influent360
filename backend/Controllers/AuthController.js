@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 
 module.exports.Signup = async (req, res, next) => {
   try {
-    const { name, email, mobile, password, createdAt } = req.body;
+    const { name, email, mobile, password } = req.body;
 
     if (!name || !email || !mobile || !password) {
       return res.status(400).json({
@@ -23,7 +23,6 @@ module.exports.Signup = async (req, res, next) => {
       email,
       mobile,
       password,
-      createdAt,
     });
 
     const token = createSecretToken(user._id);
